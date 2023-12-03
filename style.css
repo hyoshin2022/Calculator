@@ -1,24 +1,24 @@
 html {
-    box-sizing: border-box;
-    height: 100%;
+    box-sizing: border-box; /* 박스너비 기준 */
+    height: 100%; 
 }
 
 *,
 *::before,
-*::after {
-    box-sizing: inherit;
-    margin: 0;
-    padding: 0;
+*::after { /* 마지막 요소에 적용 */
+    box-sizing: inherit; /* inherit  부모로부터 물려받음*/
+    margin: 0; /* margin  네 방향 바깥 여백*/
+    padding: 0; /* margin  네 방향 안쪽 여백*/
 }
 
 body {
-    align-items: center;
-    background: linear-gradient(320deg, #eb92be, #ffef78, #63c9b4);
-    display: flex;
-    font-family: 'Dosis', sans-serif;
+    align-items: center; /* 수직축 방향으로 항목정렬 : 가운데 */
+    background: linear-gradient(320deg, #eb92be, #ffef78, #63c9b4); /* 전체 배경화면 linear-gradient 두개 이상 색상 그라데이션 */
+    display: flex; /* 부모 flex container 설정 / width만큼 가로 방향으로 배치 칼럼 높이가 자동으로 맞춰짐 */
+    font-family: 'Dosis', sans-serif; /* 글씨체 */
     font-display: swap;
     height: inherit;
-    justify-content: center;
+    justify-content: center; /* 아이템 화면 가운데 설정 */
 }
 
 .wrapper {
@@ -31,7 +31,7 @@ body {
     -webkit-backdrop-filter: blur(4px);
     background: rgba(255, 255, 255, 0.30);
     border: 1px solid rgba(255, 255, 255, 0.34);
-    flex-basis: 400px;
+    flex-basis: 400px; /* 아이템의 기본 크기 설정 */
     height: 540px;
     padding: 20px 35px;
 }
